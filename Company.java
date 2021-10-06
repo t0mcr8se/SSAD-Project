@@ -1,8 +1,6 @@
 public class Company {
-    Details details;
-    // TODO expand info, maybe to another class
-    String grievances[];
-
+    Stirng name,owner,foundingDate,grievances[];
+    int revenue;
     Company(){
 
 
