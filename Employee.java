@@ -1,7 +1,9 @@
-public class Employee {
+public  class Employee extends Person {
     boolean isOnLeave;
     double salary;
-
+    Employee(String username, String password, boolean isAdmin, int age, String firstName, String surName){
+        super(username, password, isAdmin, age, firstName, surName);
+    }
     // TODO: change the return value for all functions below
     boolean checkLeaveStatus(){ return true; }
     double checkSalary(){ return 0.0; }
