@@ -1,4 +1,4 @@
-public  class Employee extends Person {
+public class Employee extends Person {
     boolean isOnLeave;
     double salary;
     Employee(String username, String password, boolean isAdmin, int age, String firstName, String surName){
