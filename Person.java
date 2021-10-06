@@ -1,7 +1,7 @@
 class Person{
-    private int age;
-    private boolean isAdmin;
-    private String username, password, firstName, sureName; // TODO: make private
+    protected int age;
+    protected boolean isAdmin;
+    protected String username, password, firstName, sureName; // TODO: make private
     // TODO: add name or smth
     int id;
     Person(String username, String password, boolean isAdmin, int age, String firstName, String sureName){
