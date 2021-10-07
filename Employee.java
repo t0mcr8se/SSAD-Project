@@ -1,14 +1,54 @@
 public class Employee extends Person {
-    boolean isOnLeave;
-    double salary;
-    Employee(String username, String password, boolean isAdmin, int age, String firstName, String surName){
+    protected boolean isOnLeave;
+    protected double salary;
+
+    Employee(String username, String password, boolean isAdmin, int age, String firstName, String surName) {
         super(username, password, isAdmin, age, firstName, surName);
     }
     // TODO: change the return value for all functions below
-    boolean checkLeaveStatus(){ return true; }
-    double checkSalary(){ return 0.0; }
-    boolean checkHoliday(int day, int month, int year){ return false; }
-    void voiceGrievance(String report){}
-    void resign(){}
+
+    /**
+     * This method is used to show if the employee is on leave or not
+     *
+     * @return
+     */
+    boolean checkLeaveStatus() {
+        return isOnLeave;
+    }
+
+    /**
+     * This method is used to show the salary of the employee
+     *
+     * @return
+     */
+    double checkSalary() {
+        return salary;
+    }
+
+    /**
+     * This method is used to view the yearly holiday list
+     *
+     * @param day
+     * @param month
+     * @param year
+     * @return
+     */
+    boolean checkHoliday(int day, int month, int year) {//this shouldn't have any parameters and it should return a list
+        return false;
+    }
+
+    /**
+     * this method is used to voice grievances
+     *
+     * @param report
+     */
+    void voiceGrievance(String report) { //this should add the grievance to the list initialized in class company
+    }
+
+    /**
+     * this method is used to resign which will result in deleting the person from the database
+     */
+    void resign() {
+    }
 
 }
