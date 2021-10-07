@@ -1,8 +1,8 @@
 public class Admin extends Person {
     private Company company;
 
-    Admin(String username, String password, boolean isAdmin, int age, String firstName, String surName, int companyId) {
-        super(username, password, isAdmin, age, firstName, surName);
+    Admin(String username, String password, int age, String firstName, String surName, int companyId) {
+        super(username, password, true, age, firstName, surName);
         this.company = new Company(companyId);
     }
 
