@@ -1,42 +1,32 @@
-public class DatabaseConnection {
-    private static DatabaseConnection db;
+class Person {
+    protected int age;
+    protected boolean isAdmin;
+    protected String username, password, firstName, surName;
+    protected int id; // each person should have a unique ID when created
 
-    private DatabaseConnection() {
+    Person(String username, String password, boolean isAdmin, int age, String firstName, String surName) {
+        // TODO: get user from the database if already exists, else generate new ID
+        this.username = username;
+        this.password = password;
+        this.age = age;
+        this.isAdmin = isAdmin;
+        this.firstName = firstName;
+        this.surName = surName;
     }
 
     /**
-     * Singleton design pattern for the Database connection to control the load balance, unnecessary connections, shared db connection management... etc
-     *
-     * @return
+     * this is used to fetch the person from the database based on his/her ID
+     * @param id
      */
-    public DatabaseConnection getDB() {
-        if (db == null) {
-            db = new DatabaseConnection();
-        }
-        return db;
+    Person(int id) {
+        // TODO: get person from the database
     }
 
     /**
-     * this method is used to add data to the database
-     *
-     * @param sql
+     * this method is used to login into the system
+     * @param username
+     * @param password
      */
-    void write(String sql) {
-        System.out.println("DATA succesfully written to the database!");
+    void login(String username, String password) {
     }
-
-    /**
-     * this method is used to retrieve data from the database
-     *
-     * @param sql
-     * @return
-     */
-    String read(String sql) {
-        // TODO: return smth
-        System.out.println("DATA succesfully read from database!");
-        return "";
-
-    }
-
-
 }
