@@ -9,19 +9,22 @@ public class Admin extends Person {
      *
      * @param info
      */
-    void changeCompanyInfo(String info) { //what info does it change exactly ?
+    void changeCompanyInfo(String info) {
+        System.out.println("Changing info");
     }
 
     /**
      * this method is used to manage the leave status for employees
      */
     void leaveManagement() {
+        System.out.println("Managing leave status");
     }
 
     /**
      * this method is used to change the salary for employees
      */
     void changePayment() {
+        System.out.println("Changing payment");
     }
 
     /**
@@ -31,7 +34,7 @@ public class Admin extends Person {
      * @param password
      */
     void addEmplyee(String username, String password) {
-        
+        System.out.println("Adding employee to database");
     }
 
     /**
@@ -39,6 +42,7 @@ public class Admin extends Person {
      *
      * @param id
      */
-    void addEmployeeDetails(int id) { // what details exactly ?
+    void addEmployeeDetails(int id) {
+        System.out.println("Adding details of employee");
     }
 }
