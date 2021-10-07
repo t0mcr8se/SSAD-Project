@@ -1,7 +1,9 @@
 public class Admin extends Person {
-    // TODO: maybe Company company;
-    Admin(String username, String password, boolean isAdmin, int age, String firstName, String surName) {
+    private Company company;
+
+    Admin(String username, String password, boolean isAdmin, int age, String firstName, String surName, int companyId) {
         super(username, password, isAdmin, age, firstName, surName);
+        this.company = new Company(companyId);
     }
 
     /**
