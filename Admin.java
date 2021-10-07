@@ -35,7 +35,7 @@ public class Admin extends Person {
      * @param username
      * @param password
      */
-    void addEmplyee(String username, String password) {
+    void addEmployee(String username, String password) {
         System.out.println("Adding employee to database");
     }
 
