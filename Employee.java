@@ -2,8 +2,8 @@ public class Employee extends Person {
     protected boolean isOnLeave;
     protected double salary;
 
-    Employee(String username, String password, boolean isAdmin, int age, String firstName, String surName) {
-        super(username, password, isAdmin, age, firstName, surName);
+    Employee(String username, String password, int age, String firstName, String surName) {
+        super(username, password, false, age, firstName, surName);
     }
     // TODO: change the return value for all functions below
 
