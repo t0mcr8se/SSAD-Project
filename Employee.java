@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Employee extends Person {
     protected boolean isOnLeave;
     protected double salary;
@@ -28,13 +30,11 @@ public class Employee extends Person {
     /**
      * This method is used to view the yearly holiday list
      *
-     * @param day
-     * @param month
-     * @param year
-     * @return
+     * @return a list of 365 booleans that state if the ith day of the year is a holiday or not
      */
-    boolean checkHoliday(int day, int month, int year) {//this shouldn't have any parameters and it should return a list
-        return false;
+    ArrayList<Boolean> checkHoliday() {
+        ArrayList<Boolean> holidays = new ArrayList<Boolean>();
+        return holidays;
     }
 
     /**
