@@ -27,6 +27,7 @@ class Person {
      * @param username
      * @param password
      */
-    void login(String username, String password) {
+    boolean login(String username, String password) {
+        return true;        
     }
 }
