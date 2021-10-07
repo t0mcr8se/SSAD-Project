@@ -49,6 +49,7 @@ public class Employee extends Person {
      * this method is used to resign which will result in deleting the person from the database
      */
     void resign() {
+        System.out.println("Deleting person from database");
     }
 
 }
