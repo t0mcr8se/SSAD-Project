@@ -20,6 +20,8 @@ class Person {
      */
     Person(int id) {
         // TODO: get person from the database
+        DatabaseConnection db = DatabaseConnection.getDB();
+        // Continue logic here
     }
 
     /**

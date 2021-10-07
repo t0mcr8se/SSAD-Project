@@ -9,7 +9,7 @@ public class DatabaseConnection {
      *
      * @return
      */
-    public DatabaseConnection getDB() {
+    public static DatabaseConnection getDB() {
         if (db == null) {
             db = new DatabaseConnection();
         }
